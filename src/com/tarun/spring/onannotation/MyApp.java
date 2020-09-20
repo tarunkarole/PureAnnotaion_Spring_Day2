@@ -9,10 +9,12 @@ public class MyApp {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SportConfig.class);
 
-        Ludo coach = context.getBean("myLudo" , Ludo.class);
+        LudoImpl coach = context.getBean("myLudo" , LudoImpl.class);
 
         System.out.println(coach.getLudo());
         System.out.println(coach.getCricket());
+        System.out.println(coach.getName());
+        System.out.println(coach.getEmail());
 
 
     }

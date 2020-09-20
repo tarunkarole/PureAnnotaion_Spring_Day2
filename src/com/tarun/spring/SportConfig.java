@@ -6,14 +6,12 @@ import com.tarun.spring.onannotation.CricketCoachImpl;
 import com.tarun.spring.onannotation.Ludo;
 import com.tarun.spring.onannotation.LudoImpl;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.w3c.dom.css.CSSImportRule;
+import org.springframework.context.annotation.PropertySource;
 
-import java.security.PublicKey;
 
 @Configuration
-@ComponentScan("com.tarun.spring")
+@PropertySource("classpath:sports.properties")
 public class SportConfig {
 
     @Bean
